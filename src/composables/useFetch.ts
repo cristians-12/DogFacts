@@ -1,6 +1,6 @@
 // fetch.js
 import { Ref, ref } from "vue";
-import { FavoriteFacts, FetchResult } from "../types";
+import { FetchResult } from "../types";
 
 export function useFetch(url: string) {
   const data = ref(null);

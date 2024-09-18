@@ -30,8 +30,8 @@ const handleRemoveFavorite = (fact) => {
 <template>
   <div class="flex flex-col items-center justify-center h-screen gap-10">
     <div class="flex items-center gap-10 font-bold">
-      <img class="w-20" src="/images/dog-paw.png" alt="Dog Paw" />
-      <h1 class="text-[40px]">Dog Facts 🐕</h1>
+      <img class="lg:w-20 w-10" src="/images/dog-paw.png" alt="Dog Paw" />
+      <h1 class="lg:text-[40px] text-[1.5rem]">Dog Facts 🐕</h1>
     </div>
 
     <div v-if="facts.data" class="flex justify-center">
@@ -46,7 +46,7 @@ const handleRemoveFavorite = (fact) => {
     </div>
 
     <div
-      class="w-[20%] rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl"
+      class="lg:w-[20%] rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl"
       v-if="dogImg?.data?.url"
     >
       <img class="w-full" :src="dogImg.data.url" alt="dog_image" />
@@ -70,9 +70,9 @@ const handleRemoveFavorite = (fact) => {
 
     <div
       @click="sideFav = true"
-      class="fixed bottom-5 right-5 w-28 cursor-pointer hover:scale-105 hover:shadow-2xl rounded-full px-10 py-5 bg-gray-500"
+      class="fixed bottom-5 right-5 lg:w-28 w-10 cursor-pointer hover:scale-105 hover:shadow-2xl rounded-full px-10 py-5 bg-gray-500"
     >
-      <img class="w-[40px]" src="/images/menu.png" alt="Menu" />
+      <img class="lg:w-[40px] w-[20px]" src="/images/menu.png" alt="Menu" />
     </div>
 
     <SideBarFavs

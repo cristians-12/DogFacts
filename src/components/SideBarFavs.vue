@@ -19,7 +19,7 @@ const removeFavorite = (fact) => {
 
 <template>
   <div
-    class="fixed right-0 w-[30%] top-0 bg-gray-700 h-screen px-5 py-10 text-white"
+    class="fixed right-0 lg:w-[30%] w-full top-0 bg-gray-700 h-screen px-5 py-10 text-white"
   >
     <span class="font-bold text-[30px]">Your favorite facts are:</span>
 
